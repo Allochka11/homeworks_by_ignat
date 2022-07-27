@@ -12,6 +12,7 @@ function Message(props: MessageType) {
     return (
         <div className={classes.message}>
             <img src={props.avatar} alt={'avatar'}/>
+            <div className={classes.triangle}></div>
             <div className={classes.dialog}>
                 <div className={classes.title}>{props.name}</div>
                 <div className={classes.text}>{props.message}</div>

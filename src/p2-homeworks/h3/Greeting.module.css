@@ -3,5 +3,11 @@
 }
 
 .error {
-    border: 1px solid red;
+    position: absolute;
+    top: 77px;
+    left: 4px;
+    color: red;
+}
+.errorInput {
+    background: red;
 }

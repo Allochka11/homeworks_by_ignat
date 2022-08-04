@@ -31,6 +31,7 @@ export const filterAffairs = (affairs:AffairType[], filter:FilterType): AffairTy
     if(filter === 'high') {
         newAffair= affairs.filter(affair => affair.priority === 'high')
     }
+
     return newAffair;
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {

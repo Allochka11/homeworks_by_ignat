@@ -24,22 +24,31 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
+
+
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+
         onChange // если есть пропс onChange
         && onChange(e) // то передать ему е (поскольку onChange не обязателен)
 
         onChangeText && onChangeText(e.currentTarget.value)
+
     }
+
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
+
+        console.log('onKeyPress' , e.key)
+
         onKeyPress && onKeyPress(e);
 
         onEnter // если есть пропс onEnter
         && e.key === 'Enter' // и если нажата кнопка Enter
         && onEnter() // то вызвать его
+
     }
 
-    const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''}`
-    const finalInputClassName = `${s.errorInput} ${className}` // need to fix with (?:) and s.superInput
+    const finalSpanClassName = `${s.error} ${spanClassName}`;
+    const finalInputClassName = error ? `${s.errorInput} ` : `${className} ${s.superInput}`
 
     return (
         <>

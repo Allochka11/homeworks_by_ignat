@@ -1,10 +1,23 @@
 .superInput {
-
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid  green;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 16.5px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid #fc5757;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset -5px -1px 47px 11px rgba(245,117,117,0.55);
 }
 
 .error {

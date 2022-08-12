@@ -1,4 +1,36 @@
-.someClass {
-    border: 1px solid green;
+
+
+.body{
+    display: flex;
+
+}
+.item{
+    margin: 10px;
+    width: 100px;
+}
+.button {
+    margin: 10px;
+    width: 30px;
+}
+
+.button:hover, .filterButton:hover {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+
+.filterButton{
+    margin: 10px;
+    width: 50px;
+}
+
+.high{
+    color: #e03091;
+}
+.middle{
+    color: #fff170;
+}
+.low {
+    color: #62ff8a;
 
 }

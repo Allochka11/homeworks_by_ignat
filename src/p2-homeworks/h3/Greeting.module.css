@@ -1,13 +1,17 @@
-.someClass {
-
+.main {
+    margin-bottom: 20px;
+}
+.greeting {
+    display: flex;
 }
 
 .error {
-    position: absolute;
-    top: 77px;
-    left: 4px;
     color: red;
+    height: 21px ;
 }
 .errorInput {
-    background: red;
+    border: 1px solid red;
+}
+.greeting input:focus-visible{
+    outline: none;
 }

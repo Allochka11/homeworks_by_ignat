@@ -1,7 +1,12 @@
 .checkbox {
-
+    transform: scale(2);
+    margin: 40px 15px 0 0;
+    background-color: green;
 }
 
 .spanClassName {
 
 }
+
+
+

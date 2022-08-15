@@ -1,8 +1,9 @@
 import React, {ChangeEvent, useState} from 'react'
 import SuperInputText from './common/c1-SuperInputText/SuperInputText'
-import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
+import s from './HW4.module.css'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import {log} from "util";
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -30,7 +31,6 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
@@ -46,11 +46,12 @@ function HW4() {
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
+                    className={s.blue}
                 >
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton disabled>
+                <SuperButton disabled className={s.blue}>
                     disabled
                 </SuperButton>
 
@@ -64,7 +65,7 @@ function HW4() {
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox checked={checked} onChange={testOnChange} />
             </div>
 
             <hr/>

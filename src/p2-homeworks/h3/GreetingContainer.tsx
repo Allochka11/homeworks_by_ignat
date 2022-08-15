@@ -31,10 +31,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const addUser = () => {
-        addUserCallback(name);
-        alert(`Hello ${name} !`);
-        setName('');
-
+        if(name !== '') {
+            addUserCallback(name);
+            alert(`Hello ${name} !`);
+            setName('');
+        }
 
     }
     const onKeyDownHandler = (e:KeyboardEvent<HTMLInputElement>) => {

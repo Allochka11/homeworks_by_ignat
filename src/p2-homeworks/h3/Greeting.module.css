@@ -15,3 +15,12 @@
 .greeting input:focus-visible{
     outline: none;
 }
+
+.button {
+    min-height: 10px;
+    padding: 2px;
+}
+
+.span {
+    padding: 3px;
+}

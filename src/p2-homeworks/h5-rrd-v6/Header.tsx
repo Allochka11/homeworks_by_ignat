@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {NavLink} from "react-router-dom";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import s from './Header.module.css';
+import {PATH} from "./Pages";
 
 function Header() {
 
@@ -16,13 +17,13 @@ function Header() {
                 <div className={s.header__menu}>
                     <nav className={openIconButton}>
                         <ul className={s.menu__list}>
-                            <li><NavLink to={'/pre-junior'}
+                            <li><NavLink to={PATH.PRE_JUNIOR}
                                          className={({isActive}) => isActive ? `${s.active}` : s.menu__link}>Pre-junior </NavLink>
                             </li>
-                            <li><NavLink to={'/junior'}
+                            <li><NavLink to={PATH.JUNIOR}
                                          className={({isActive}) => isActive ? s.active : s.menu__link}>Junior </NavLink>
                             </li>
-                            <li><NavLink to={'/junior_plus'}
+                            <li><NavLink to={PATH.JUNIORPLUS}
                                          className={({isActive}) => isActive ? s.active : s.menu__link}>Junior+ </NavLink>
                             </li>
                         </ul>

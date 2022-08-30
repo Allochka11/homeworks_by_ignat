@@ -32,7 +32,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     const {children, onDoubleClick, className, ...restSpanProps} = spanProps || {};
 
     const onEnterCallback = () => {
-        setEditMode(true); // выключить editMode при нажатии Enter
+        setEditMode(false); // выключить editMode при нажатии Enter
 
         onEnter && onEnter();
     }
@@ -67,10 +67,11 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
 
                         {...restSpanProps}
                     >
-                        <img className={s.span__img} src="http://simpleicon.com/wp-content/uploads/pen-14-64x64.png"
-                             alt=""/>
+
                         {/*если нет захардкодженного текста для спана, то значение инпута*/}
-                        {children || restProps.value}
+
+
+                        &#128395;{children || restProps.value}
                     </span>
                 )
             }

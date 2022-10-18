@@ -1,0 +1,12 @@
+
+.mainTable, .buttonsContainer {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.buttonSize {
+   font-size: 14px;
+   padding: 1px;
+}

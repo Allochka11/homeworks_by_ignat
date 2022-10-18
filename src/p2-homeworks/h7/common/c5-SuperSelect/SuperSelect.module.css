@@ -1,0 +1,11 @@
+.select {
+    margin-top: 10px;
+    min-width: 60px;
+    min-height: 35px;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    /* appearance: none; стрелка убрана*/
+}
+
